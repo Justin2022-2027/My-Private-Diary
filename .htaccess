@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Redirect /admin to admin_login.php
+RewriteRule ^admin/?$ admin_login.php [L]
+
+# Redirect /admin/anything to admin_login.php
+RewriteRule ^admin/(.*)$ admin_login.php [L]
